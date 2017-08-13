@@ -1,0 +1,7 @@
+node_modules
+dist
+app/views
+app/js/plugins
+server
+tasks
+.DS_Store
