@@ -36,6 +36,7 @@ git clone git@github.com:cucygh/es6-vue-react-gulp.git
   ```
 
   也就是增加<code>app.use(require('connect-livereload')());</code>语句，一定要注意这行代码的加入位置，如上述位置。
+  
 4. 在当前目录执行
 
   ```shell
