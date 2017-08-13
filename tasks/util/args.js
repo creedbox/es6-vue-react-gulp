@@ -26,8 +26,14 @@ const args = yargs
 
   .option('port',{
     string:true,
-    default:8080,
+    default:3000,
     describe:'server port'
+  })
+
+  .option('liveport',{
+    string:true,
+    default:35279,
+    describe:''
   })
 
   .argv

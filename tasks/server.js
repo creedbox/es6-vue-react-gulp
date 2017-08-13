@@ -5,8 +5,11 @@ import args from './util/args';
 
 gulp.task('serve',(cb)=>{
   if(!args.watch) return cb();
-
-  var server = liveserver.new(['--harmony','server/bin/www']);
+  var server = liveserver('server/bin/www',{
+    env: {
+      PORT: args.port
+    }
+  },args.liveport);
   server.start();
 
   gulp.watch(['server/public/**/*.js','server/views/**/*.ejs'],function(file){
